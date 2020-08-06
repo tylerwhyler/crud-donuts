@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 
-import mockdata from "./mockdata.json"
+import axios from "axios";
 
-import "./styles/home.css"
+import mockdata from "./mockdata.json";
+
+import "./styles/home.css";
 
 function Home() {
+
+    const getData = () => {
+        axios.get("http://localhost:5000/donuts")
+        .then(res => {
+            console.log(res.data)
+        })
+    }
+    
+    useEffect(() => {
+        getData()
+    }, [])
 
     const renderDonuts = mockdata.map(item => {
         const {donutname, 
@@ -36,4 +49,3 @@ function Home() {
 }
 
 export default Home;
-
