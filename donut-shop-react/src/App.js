@@ -6,6 +6,7 @@ import Navigation from "./navigation"
 
 import "./styles/main.css"
 
+
 function App() {
   return (
     <div className="App">
