@@ -7,7 +7,7 @@ function Navigation() {
         <Link exact to="/">Menu</Link>
         <Link exact to="/">About</Link>
         <Link exact to="/">Contact</Link>
-        <Link exact to="/">Admin Dashboard</Link>
+        <Link exact to="/admin">Admin Dashboard</Link>
     </div>
   );
 }

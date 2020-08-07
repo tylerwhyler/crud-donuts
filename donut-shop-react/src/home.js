@@ -31,21 +31,22 @@ function Home() {
         return (
             <div className="donut-item-wrapper">
                 <div className="donut-item">
-                    <h2>{name}</h2>
+                   <h2>{name}</h2>
                     <p>{description}</p>
                     <p>{price}</p>
                 </div>
                 <div className="image-wrapper">
-                    <img src={picture_url} alt="Donut" />
+                   <img src={picture_url} alt="Donut" />
+
                 </div>    
             </div>
         );
     })
 
+
   return (
     <div className="home-wrapper">
         {renderDonuts}
-        {console.log(donutItems)}
         <p>Footer</p>
     </div>
   );
