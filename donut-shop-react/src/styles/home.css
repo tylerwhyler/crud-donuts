@@ -11,9 +11,9 @@ html {
 .donut-item-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     align-items: center;
 }
+
 
 .donut-item-wrapper:nth-of-type(odd) > .donut-item {
     text-align: right;
@@ -21,14 +21,16 @@ html {
 }
 
 .donut-item-wrapper:nth-of-type(even) > .donut-item {
+    text-align: left;
     grid-column-start: 2;
     grid-row-start: 1;
-    margin-right: 150px;
-    text-align: left;
+}
+
+.donut-item-wrapper:nth-of-type(even) > .image-wrapper {
+    margin-left: 400px;
 }
 
 .image-wrapper {
-
     height: 450px;
     width: 600px;
 }

@@ -37,7 +37,6 @@ body {
     margin: 5px;
     text-decoration: none;
     margin-right: 150px;
-    width: 100%;
     border-bottom: 1px solid transparent;
     transition: 0.3s ease-in-out;
 }
