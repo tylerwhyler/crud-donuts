@@ -1,23 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import './styles/nav.css'
 
 function Navigation() {
   return (
     <div className="nav-bar">
-      <div className="nav-logo">
-        <p>Donutty!</p>
-      </div>
-
-      <div className="nav-bar-links">
-        <Link exact to="/">Menu</Link>
-        <Link exact to="/">About</Link>
-        <Link exact to="/">Contact</Link>
-        <Link exact to="/">Dashboard</Link>
-      </div>
-        <Link exact to="/admin">Admin Dashboard</Link>
+      <Link exact to="/">Menu</Link>
+      <Link exact to="/">About</Link>
+      <Link exact to="/">Contact</Link>
+      <Link exact to="/">Admin Dashboard</Link>
     </div>
   );
 }
 
-export default Navigation;
+export default Navigation; 
