@@ -1,32 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 
-import mockdata from "./mockdata.json"
+import axios from "axios";
 
-import "./styles/home.css"
+import mockdata from "./mockdata.json";
+
+import "./styles/home.css";
 
 function Home() {
 
-    const renderDonuts = mockdata.map(item => {
-        const {donutname, 
+    const [ donutItems, setDonutItem ] = useState([])
+
+    const getData = () => {
+        axios.get("http://localhost:5000/donuts")
+        .then(res => {
+            setDonutItem(res.data)
+        })
+    }
+
+    useEffect(() => {
+        getData()
+    }, [])
+
+    const renderDonuts = donutItems.map(item => {
+        const {name, 
                description, 
-               pictureurl, 
+               picture_url, 
                price, 
                quantity, 
                category} = item   
         return (
             <div className="donut-item-wrapper">
                 <div className="donut-item">
-                    <h2>{donutname}</h2>
+                   <h2>{name}</h2>
                     <p>{description}</p>
                     <p>{price}</p>
                 </div>
                 <div className="image-wrapper">
-                    <img src={pictureurl} alt="Donut" />
+                   <img src={picture_url} alt="Donut" />
+
                 </div>    
             </div>
         );
     })
-    
+
+
   return (
     <div className="home-wrapper">
         {renderDonuts}
@@ -36,4 +53,3 @@ function Home() {
 }
 
 export default Home;
-

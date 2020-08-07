@@ -1,0 +1,49 @@
+.donut-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   }
+
+.donut-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.donut-image img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px black;
+}
+input[type=number], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 30%;
+    background-color: hsl(199, 39%, 49%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button :hover {
+    background-color: #45a049;
+  }
+  

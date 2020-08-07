@@ -15,6 +15,7 @@ function Navigation() {
         <Link exact to="/">Contact</Link>
         <Link exact to="/">Dashboard</Link>
       </div>
+        <Link exact to="/admin">Admin Dashboard</Link>
     </div>
   );
 }

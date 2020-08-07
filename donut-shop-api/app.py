@@ -28,7 +28,7 @@ class Donut(db.Model):
     quantity = db.Column(db.Integer) 
     category = db.Column(db.String(20))
 
-    def __init__(self,name, description, picture_url, price, quantity, category):
+    def __init__(self, name, description, picture_url, price, quantity, category):
         self.name = name
         self.description = description
         self.picture_url = picture_url
@@ -38,7 +38,7 @@ class Donut(db.Model):
 
 class DonutSchema(ma.Schema):
     class Meta:
-        fields = ('name','description','picture_url', 'id')
+        fields = ('name',  'description', 'price', 'picture_url', 'id')
 
 donut_schema = DonutSchema()
 donuts_schema = DonutSchema(many = True)

@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Home from "./home"
 import Navigation from "./navigation"
+import Admin from './admin'
 
 import "./styles/nav.css"
 
@@ -13,12 +14,16 @@ function App() {
 
       <Navigation />
 
-      <Switch>
-        <Route
-          path="/"
-          component={Home}
-        />
-      </Switch>
+        <Switch>
+            <Route
+                exact path="/"
+                component={Home}
+            />
+            <Route
+                exact path = "/admin"
+                component={Admin}
+            />
+        </Switch>
     </div>
   );
 }
