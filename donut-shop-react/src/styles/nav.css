@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "Indie Flower", cursive;
 }
 .nav-bar {
     display: grid;
@@ -15,9 +16,8 @@ body {
 }
 .nav-logo {
     padding: 3px;
-    margin-left: 15px;
+    margin-left: 16px;
     font-size: 50px;
-    font-family: "Indie Flower", cursive;
     color: black;
 }
 .nav-logo p {
@@ -33,11 +33,9 @@ body {
 
 .nav-bar-links a {
     color: black;
-    font-size: 17px;
+    font-size: 20px;
     margin: 5px;
     text-decoration: none;
-    margin-right: 150px;
-    width: 100%;
     border-bottom: 1px solid transparent;
     transition: 0.3s ease-in-out;
 }
