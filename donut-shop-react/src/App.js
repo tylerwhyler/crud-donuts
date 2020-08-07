@@ -4,24 +4,21 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./home"
 import Navigation from "./navigation"
 
-import "./styles/main.css"
+import "./styles/nav.css"
 
 
 function App() {
   return (
     <div className="App">
-        <p>
-          Hi react
-        </p>
 
-        <Navigation />
+      <Navigation />
 
-        <Switch>
-            <Route
-                path="/"
-                component={Home}
-            />
-        </Switch>
+      <Switch>
+        <Route
+          path="/"
+          component={Home}
+        />
+      </Switch>
     </div>
   );
 }
