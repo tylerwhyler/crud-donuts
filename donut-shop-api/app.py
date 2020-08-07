@@ -38,7 +38,7 @@ class Donut(db.Model):
 
 class DonutSchema(ma.Schema):
     class Meta:
-        fields = ('name','description','picture_url', 'id')
+        fields = ('name', 'price', 'description','picture_url', 'id')
 
 donut_schema = DonutSchema()
 donuts_schema = DonutSchema(many = True)

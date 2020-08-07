@@ -10,6 +10,10 @@ flask = "*"
 flask-sqlalchemy = "*"
 flask-marshmallow = "*"
 flask-cors = "*"
+<<<<<<< HEAD
+=======
+marshmallow-sqlalchemy = "*"
+>>>>>>> f8dad4f973f1408b1e241f3c2f8f6f73062905eb
 
 [requires]
 python_version = "3.8"
