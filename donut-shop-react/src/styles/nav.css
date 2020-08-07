@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: grey;
+    background-image: url("../images/donut-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid black;
+}
+.nav-logo {
+    padding: 3px;
+    margin-left: 15px;
+    font-size: 50px;
+    font-family: "Indie Flower", cursive;
+    color: black;
+}
+.nav-logo p {
+    margin: 20px;
+}
+
+.nav-bar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-links a {
+    color: black;
+    font-size: 17px;
+    margin: 5px;
+    text-decoration: none;
+    margin-right: 150px;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-bar-links a:hover {
+    border-bottom: 1px solid black;
+    border-bottom-width: thin;
+}

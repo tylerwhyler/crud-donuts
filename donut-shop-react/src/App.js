@@ -5,17 +5,14 @@ import Home from "./home"
 import Navigation from "./navigation"
 import Admin from './admin'
 
-import "./styles/main.css"
+import "./styles/nav.css"
 
 
 function App() {
   return (
     <div className="App">
-        <p>
-          Hi react
-        </p>
 
-        <Navigation />
+      <Navigation />
 
         <Switch>
             <Route
