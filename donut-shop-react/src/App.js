@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Home from "./home"
 import Navigation from "./navigation"
+import Admin from './admin'
 
 import "./styles/main.css"
 
@@ -17,8 +18,12 @@ function App() {
 
         <Switch>
             <Route
-                path="/"
+                exact path="/"
                 component={Home}
+            />
+            <Route
+                exact path = "/admin"
+                component={Admin}
             />
         </Switch>
     </div>

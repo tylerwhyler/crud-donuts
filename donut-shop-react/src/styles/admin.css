@@ -1,0 +1,24 @@
+.donut-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   }
+
+.donut-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.donut-image img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px black;
+}
